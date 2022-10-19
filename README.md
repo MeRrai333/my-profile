@@ -1,3 +1,3 @@
-I'm beginer /n
-This is my profile /n
-Made by React and Tailwind css /n
+I'm beginer
+This is my profile
+Made by React and Tailwind css

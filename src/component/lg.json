@@ -1,0 +1,58 @@
+{
+    "EN" : {
+        "nav" : {
+            "Home" : "Home",
+            "About" : "About",
+            "Services" : "Services"
+        },
+        "t1" : {
+            "t1_001" : "I'm Max Methit",
+            "t1_002" : "Freelance frontend developer",
+            "t1_003" : "HTML/CSS/Javascript/React",
+            "t1_004" : "I'm studying in computer engineer"
+        },
+        "t2" : {
+            "s1" : "Service",
+            "s1_001" : "Your design to Web",
+            "s1_002_1" : "Design or Image",
+            "s1_002_2" : "to",
+            "s1_002_3" : "HTML/CSS or React",
+            "s2_001" : "Your requirement to Web",
+            "s2_002_1" : "Your requirement",
+            "s2_002_2" : "to",
+            "s2_002_3" : "HTML/CSS or React",
+            "s3_001" : "Template to Web",
+            "s3_002_1" : "Choice your template",
+            "s3_002_2" : "to",
+            "s3_002_3" : "HTML/CSS or React"
+        }
+    },
+    "TH" : {
+        "nav" : {
+            "Home" : "หน้าหลัก",
+            "About" : "เกี่ยวกับ",
+            "Services" : "บริการ"
+        },
+        "t1" : {
+            "t1_001" : "ผมชื่อแม็กครับ",
+            "t1_002" : "เป็น Freelance frontend developer",
+            "t1_003" : "HTML/CSS/Javascript/React",
+            "t1_004" : "กำลังศึกษาวิศวกรรมคอมพิวเตอร์"
+        },
+        "t2" : {
+            "s1" : "บริการ",
+            "s1_001" : "ไฟล์ Design เป็น เว็บไซต์",
+            "s1_002_1" : "ไฟล์ Design หรือ รูปภาพ",
+            "s1_002_2" : "เป็น",
+            "s1_002_3" : "HTML/CSS หรือ React",
+            "s2_001" : "ระบุความต้องการของคุณสร้างเป็นเว็บไซต์",
+            "s2_002_1" : "ความต้องการ",
+            "s2_002_2" : "เป็น",
+            "s2_002_3" : "HTML/CSS หรือ React",
+            "s3_001" : "Template เป็น เว็บไซต์",
+            "s3_002_1" : "เลือก Template ที่ต้องการ",
+            "s3_002_2" : "เป็น",
+            "s3_002_3" : "HTML/CSS หรือ React"
+        }
+    }
+}

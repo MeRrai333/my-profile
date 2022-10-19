@@ -3,16 +3,16 @@ import NavBar from './nav_bar.js'
 
 export default function main_page(){
    return(
-    <div className="grid sm:grid-cols-3 lg:grid-cols-6 gap-4 lg:grid-rows-4">
+    <div className="grid grid-cols-3 lg:grid-cols-6 gap-4 lg:grid-rows-4">
         <NavBar SM="0"/>
 
         <div></div>
         <div className="z-50 sm:text-center lg:text-left">
             <h1 className="text-2xl font-bold">MAX METHIT</h1> 
-            <h2 className="text-base ">Hi, I’m Max I study in Computer engineer and interest in Backend developer, Data engineer and ML engineer</h2>
+            <h2 className="text-base ">Hi, I’m Max I study in Computer engineer and interest in Fullstack developer, Data engineer and ML engineer</h2>
         </div>
         <div className="lg:col-span-1"></div>
-        <div className="z-50 sm:ml-10 sm:col-span-3 sm:row-sapn-3 lg:col-span-2 lg:row-span-2 drop-shadow-lg">
+        <div className="z-50 sm:ml-10 col-span-3 sm:row-sapn-3 lg:col-span-2 lg:row-span-2 drop-shadow-lg">
             <img className="mx-auto" src="https://scontent.fbkk2-8.fna.fbcdn.net/v/t39.30808-6/301418479_5457493281000002_4545961415524115644_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_aid=0&_nc_eui2=AeHYhXYaEl3SEAYWRaNvHxnVdpQ7f44dNkB2lDt_jh02QGcqDsZxlhNoDEaYN5OTGhr3kiMdtRlz9ysGczGX-5O6&_nc_ohc=JPrTFVozV-sAX_h7Sea&_nc_zt=23&_nc_ht=scontent.fbkk2-8.fna&oh=00_AT897cBMTySOPzjVRkYFWYat0wVazGWpCIEUJGInlSrCSg&oe=63244F6C" width="75%" />
         </div>
         <div className="hidden lg:table-cell"></div>

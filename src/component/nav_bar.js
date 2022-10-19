@@ -1,34 +1,36 @@
-import * as React from 'react'
-import {Link } from "react-router-dom";
+import React, {useEffect, useState } from 'react';
+import {Link} from 'react-scroll'
 
-export default function nav_bar(SM){
-    var ClassMain = '';
-    if(SM.SM == "0"){
-        ClassMain += 'hidden lg:table-cell lg:col-span-6 z-50';
+export default function Nav_bar(props){
+    const [nav_class, setnav_class] = useState(true);
+    const [LGnow, SetLGnow] = useState(props.LGuse);
+
+    useEffect(() => {
+        const updatePosition = () => {
+            if(window.pageYOffset > 50) {
+                setnav_class(false);
+            }
+            else{
+                setnav_class(true);
+            }
+        }
+        window.addEventListener("scroll", updatePosition);
+        updatePosition();
+        return () => window.removeEventListener("scroll", updatePosition);
+    }, []);
+
+    const ChangeLG = () => {
+        LGnow == "EN" ? SetLGnow('TH') : SetLGnow('EN');
+        props.ChangeLG(LGnow)
     }
-    else{
-        ClassMain += 'lg:hidden col-span-3 z-50';
-    }
+    // top-0 sticky
     return(
-        <div className={ClassMain}>
-            <div className="grid z-50">
-                <div className="text-center mt-3">
-                    <Link to="/">
-                        <button className="p-2 rounded-lg bg-MainColor hover:bg-HoverColor drop-shadow-lg">Home</button>
-                    </Link>
-                </div>
-                <div className="text-center mt-3 sm:mb-3">
-                    <Link to="/cat">
-                        <button className="p-2 rounded-lg bg-MainColor hover:bg-HoverColor drop-shadow-lg">Random Cat Images</button>
-                    </Link>
-                </div>
-                <div className="text-center mt-3 sm:mb-3">
-                    <Link to="/user">
-                        <button className="p-2 rounded-lg bg-MainColor hover:bg-HoverColor drop-shadow-lg">Random User</button>
-                    </Link>
-                </div>
-                <div className="hidden lg:table-cell lg:col-span-6"></div>
-            </div>
+        <div id="nav" className={nav_class ? "pl-32 pr-32 grid grid-cols-12 font-mono pt-4 z-10 absolute top-0 right-0 left-0" : "pl-32 pr-32 grid grid-cols-12 font-mono pt-4 z-10 sticky top-0"}>
+            <div className="col-span-8"></div>
+            <div className="m-auto text-2xl z-10 text-White drop-shadow-md"><Link to="Home" smooth={true}>{props.LG.Home}</Link></div>
+            <div className="m-auto text-2xl z-10 text-White drop-shadow-md"><Link to="About" smooth={true}>{props.LG.About}</Link></div>
+            <div className="m-auto text-2xl z-10 text-White drop-shadow-md"><Link to="Service" smooth={true}>{props.LG.Services}</Link></div>
+            <div className="m-auto text-2xl z-10 text-White drop-shadow-md" onClick={() => ChangeLG()}> {LGnow} </div>
         </div>
     )
 }
